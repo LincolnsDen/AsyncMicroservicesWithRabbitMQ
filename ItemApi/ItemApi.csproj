@@ -23,4 +23,8 @@
     <ProjectReference Include="..\DedicatedService\DedicatedService.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

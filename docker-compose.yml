@@ -1,0 +1,18 @@
+﻿services:
+  rabbitmq:
+    image: rabbitmq:3.12-management-alpine  # Includes the management plugin
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"   # AMQP port (for clients)
+      - "15672:15672" # Management UI port (HTTP)
+    environment:
+       RABBITMQ_DEFAULT_USER: guest      # Default username
+       RABBITMQ_DEFAULT_PASS: guest   # Default password
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq  # Persistent storage for queues
+    restart: unless-stopped  # Auto-restart on failure
+
+volumes:
+  rabbitmq_data:  # Named volume for persistent message storage
+   driver: local

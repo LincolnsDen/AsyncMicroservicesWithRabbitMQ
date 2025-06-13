@@ -10,6 +10,6 @@ namespace DedicatedService.DTOs
         decimal ItemPrice,
         int TotalQuantity,
         decimal TotalAmmount,
-        DateTime CurrentDate
+        DateTime OrderDate
     );
 }

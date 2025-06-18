@@ -56,3 +56,11 @@
    - Consumes OrderCreated events from RabbitMQ
    - Sends emails using MailKit
   
+![image_alt](https://github.com/LincolnsDen/AsyncMicroservicesWithRabbitMQ/blob/da43ffdbd16e10b84a43f4d7053e6c186f2ce9f4/Async%20MservicesFlowChart.svg).
+
+### 📬 Contact
+
+GitHub: @LincolnsDen
+
+LinkedIn: www.linkedin.com/in/ariful-islam-lincoln/
+  
